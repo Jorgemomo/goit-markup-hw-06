@@ -312,6 +312,10 @@ input[type="checkbox"] {
   border: 0;
 }
 
+.icon-form:hover {
+  fill: var(--change-color);
+}
+
 #button-close {
   position: absolute;
   top: 22px;
