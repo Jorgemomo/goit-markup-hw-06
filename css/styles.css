@@ -89,6 +89,10 @@ body {
   background-color: var(--change-color);
 }
 
+.selector .visit:visited {
+  color: var(--change-color);
+}
+
 .link-ad {
   color: var(--link-ad-description-color);
 }
@@ -108,8 +112,9 @@ body {
   fill: var(--link-ad-description-color);
 }
 
-.icon-nav:hover {
+.link-ad:hover .icon-nav {
   fill: var(--change-color);
+  color: var(--change-color);
 }
 
 .banner {
