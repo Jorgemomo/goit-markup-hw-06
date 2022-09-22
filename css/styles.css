@@ -231,7 +231,8 @@ span {
   letter-spacing: 0.01em;
 }
 
-input {
+.label-form input,
+.acept-terms input {
   width: 370px;
   margin-top: 5px;
   margin-left: 49px;
@@ -270,6 +271,7 @@ textarea {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  resize: none;
 }
 
 input[type="checkbox"] {
