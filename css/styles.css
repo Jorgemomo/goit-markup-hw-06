@@ -294,11 +294,13 @@ input[type="checkbox"] {
   border-radius: 4px;
 }
 
-/*.icon-check:checked{
-  background-image: url(../images/icon-check.svg);
+.checkbox:checked+.icon-check {
   background-color: var(--change-color);
-  visibility: visible;
-}*/
+  background-image: url(../images/icon-check.svg);
+  border-color: transparent;
+  background-size: contain;
+  background-origin: border-box;
+}
 
 .acept-terms {
   position: relative;
