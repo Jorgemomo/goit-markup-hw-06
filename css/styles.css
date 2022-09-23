@@ -184,7 +184,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 620px;
+  height: 581px;
   background-color: var(--body-background-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -251,7 +251,7 @@ span {
 
 .comment {
   position: absolute;
-  top: -11%;
+  top: -13%;
   left: 49px;
   font-size: 14px;
   line-height: 1.14;
@@ -260,7 +260,7 @@ span {
 
 textarea {
   width: 397px;
-  height: 120px;
+  height: 100px;
   margin-left: 49px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -270,20 +270,43 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--text-color);
   resize: none;
+}
+
+textarea:focus {
+  border-color: var(--change-color);
+  outline: 0 none;
 }
 
 input[type="checkbox"] {
   width: 16px;
   height: 15px;
+  visibility: hidden;
 }
 
+.icon-check {
+  position: absolute;
+  top: 3px;
+  width: 13px;
+  height: 12px;
+  border: 2px solid var(--text-color);
+  border-radius: 4px;
+}
+
+/*.icon-check:checked{
+  background-image: url(../images/icon-check.svg);
+  background-color: var(--change-color);
+  visibility: visible;
+}*/
+
 .acept-terms {
+  position: relative;
   display: flex;
-  margin-top: -15px;
+  margin-top: -22px;
   margin-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  gap: 5px
 }
 
 .acept-terms-text {
@@ -296,9 +319,8 @@ input[type="checkbox"] {
 }
 
 .button-form {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
+  width: 180px;
+  height: 45px;
   margin-right: auto;
   margin-left: auto;
   background: var(--change-color);
@@ -312,7 +334,11 @@ input[type="checkbox"] {
   border: 0;
 }
 
-.icon-form:hover {
+input:focus-within {
+  border-color: var(--change-color);
+}
+
+.label-form:focus-within {
   fill: var(--change-color);
 }
 
@@ -326,6 +352,10 @@ input[type="checkbox"] {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: var(--body-background-color);
+}
+
+#button-close:hover {
+  color: var(--change-color);
 }
 
 .section {
