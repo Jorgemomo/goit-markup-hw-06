@@ -115,6 +115,7 @@ body {
 .link-ad:hover .icon-nav {
   fill: var(--change-color);
   color: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner {
@@ -277,6 +278,7 @@ textarea {
 textarea:focus {
   border-color: var(--change-color);
   outline: 0 none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type="checkbox"] {
@@ -300,6 +302,7 @@ input[type="checkbox"] {
   border-color: transparent;
   background-size: contain;
   background-origin: border-box;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .acept-terms {
@@ -338,10 +341,12 @@ input[type="checkbox"] {
 
 input:focus-within {
   border-color: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-form:focus-within {
   fill: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #button-close {
@@ -358,6 +363,7 @@ input:focus-within {
 
 #button-close:hover {
   color: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -548,6 +554,7 @@ footer p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
